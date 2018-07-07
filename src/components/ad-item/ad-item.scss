@@ -1,0 +1,65 @@
+.ios, .md {
+  ad-item {
+    display: block;
+    padding: 16px;
+    .title {
+      span {
+        font-family: 'sfui-display-medium';
+        font-size: 20px;
+        color: black;
+      }
+    }
+    .price {
+      margin-left: 1em;
+      font-size: 12px;
+      color: white;
+    }
+    .params {
+      font-family: 'sfui-display-regular';
+      margin-left: 1em;
+      font-size: 12px;
+      background: rgba(black, 0.6);
+      color: white;
+    }
+    .user {
+      font-family: 'sfui-display-regular';
+      font-size: 14px;
+      color: black;
+    }
+    .location {
+      margin-left: 1em;
+      font-family: 'sfui-display-regular';
+      font-size: 14px;
+      color: black;
+    }
+    .description {
+      // padding-top: 0.25em;
+      // padding-bottom: 0.5em;
+      line-height: 25px;
+    }
+    .photos {
+      img {
+        width: 100%;
+      }
+    }
+    .buttons {
+      ion-col { //TODO move to global scope and make configurable ?
+        &:only-child{
+          padding: 0 !important;
+        }
+        &:first {
+          padding-right: 8px;
+        }
+        &:last-child {
+          padding-left: 8px;
+        }
+      }
+      button.button-ios, button.button-md { //TODO move to global scope? 
+        white-space: normal;
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
+}

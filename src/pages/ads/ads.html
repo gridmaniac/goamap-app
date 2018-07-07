@@ -1,0 +1,39 @@
+<ion-header>
+  <custom-header>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-2 class='col-first'>
+          <div class='logo'>
+            <img src='assets/imgs/logo.png'/>
+          </div>
+        </ion-col>
+        <ion-col col-8 class='col-mid'>
+          <ion-segment [(ngModel)]="mode">
+            <ion-segment-button value="ads">
+              Объявления
+            </ion-segment-button>
+            <ion-segment-button value="my-ads">
+              Мои объявления
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+        <ion-col col-2 class='col-last'>
+          <button *ngIf="mode=='my-ads'" ion-button clear color='primary' (click)='openNewAdModal()'>
+            <ion-icon name="ios-add-outline"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </custom-header>
+</ion-header>
+
+<ion-content [ngSwitch]="mode">
+  <div *ngSwitchCase="'ads'">
+    <ad-item></ad-item>
+    <ad-item></ad-item>
+  </div>
+  <div *ngSwitchCase="'my-ads'">
+    <ad-item owned='true'></ad-item>
+    <ad-item owned='true'></ad-item>
+  </div>
+</ion-content>

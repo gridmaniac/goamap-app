@@ -1,0 +1,63 @@
+<ion-header>
+  <custom-header>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-2 class='col-first'>
+          <div class='logo'>
+            <img src='assets/imgs/logo.png'/>
+          </div>
+        </ion-col>
+        <ion-col col-8 class='col-mid'>
+          <ion-segment [(ngModel)]="mode">
+            <ion-segment-button value="map">
+              Карта
+            </ion-segment-button>
+            <ion-segment-button value="places">
+              Места
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+        <ion-col col-2 class='col-last'>
+          <button style='transform: rotate(90deg);' ion-button clear color='primary' (click)='openFilterModal()'>
+            <ion-icon name="ios-options-outline"></ion-icon>      
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </custom-header>
+</ion-header>
+
+<ion-content [ngSwitch]="mode">
+  <div *ngSwitchCase="'places'">
+    <place-card
+      place='Водопад'
+      distance='10 км'
+      title='Арвалем'
+      subtitle='Водопад высотой 50 метров'
+      image='assets/imgs/place_1.png'
+    ></place-card>
+    <place-card
+      place='Пляж'
+      distance='600 м'
+      title='Чапора'
+      subtitle='Пляж с тихой и мирной атмосферой'
+      image='assets/imgs/place_2.png'
+    ></place-card>
+    <place-card
+      place='Плантация'
+      distance='15 км'
+      title='Сахакари'
+      subtitle='Знаменитая плантация пяти специй'
+      image='assets/imgs/place_3.png'
+    ></place-card>
+  </div>
+  <div *ngSwitchCase="'map'" class='map-content'>
+    <img src='assets/imgs/map.png'/>
+  </div>
+</ion-content>
+
+<content-drawer *ngIf="mode=='map'">
+  <div class="content">
+    <place-info></place-info>
+  </div>
+</content-drawer>

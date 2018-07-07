@@ -1,0 +1,51 @@
+
+<div class='title'>
+  <span>Сдается дом в Калангуте на два месяца</span>
+  <ion-badge class='price'>60 $</ion-badge>
+  <ion-badge class='params'>Фото и видео</ion-badge>
+</div>
+<div class='layout_mg_top_sm'>
+  <span class='user'>
+    <ion-icon name='md-contact'>
+    </ion-icon>
+    <span>
+      Сережа Федоров
+    </span>
+  </span>
+  <span class='location'>
+    <ion-icon name='ios-pin'>
+    </ion-icon>
+    <span>
+      Индия, Гоа
+    </span>
+  </span>
+</div>
+<div class='description layout_mg_top_sm'>
+  Дом с собственным бассейном, садом и видом на море. 130 м. квадратных, 2 этажа, береговая линия. Расстояние до моря - 100 метров. На возвышенности. Парковка, гараж.
+</div>
+<div class='photos layout_mg_top_sm'>
+  <img src='assets/imgs/ad_1.png'/>
+</div>
+<div class='buttons layout_mg_top_sm'>
+  <ng-container *ngIf='isOwned; else notOwned'>
+    <ion-grid>
+      <ion-row nowrap>
+        <ion-col>
+          <button ion-button round color='primary'>Редактировать</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-container>
+  <ng-template #notOwned>
+    <ion-grid>
+      <ion-row nowrap>
+        <ion-col col-6>
+          <button ion-button round outline color='primary'>+18009009090</button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button round color='primary'>Написать сообщение</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-template>
+</div>

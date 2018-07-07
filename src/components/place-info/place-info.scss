@@ -1,0 +1,77 @@
+.ios, .md {
+  place-info {
+    .title {
+      font-family: 'sfui-display-medium';
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    .type {
+      font-family: 'sfui-display-regular';
+      font-size: 14px;
+      text-transform: uppercase;
+      color: rgba(black, 0.75);
+      display: flex;
+      align-items: center;
+    }
+    .dist {
+      margin-left: 1em;
+      font-size: 12px;
+      background: rgba(black, 0.6);
+      color: white;
+    }
+    .gallery {
+      padding: 8px 0;
+      border-top: 1px solid rgba(black, 0.2);
+      border-bottom: 1px solid rgba(black, 0.2);
+      img {
+        width: 100%;
+      }
+    }
+    .info-item {
+      padding: 0.25em 0;
+      border-bottom: 1px solid rgba(black, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .is-closed {
+        color: color($colors, primary)
+      }
+      .phone {
+        font-family: 'sfui-display-light'
+      }
+      span {
+        font-family: 'sfui-display-semibold';
+        font-size: 18px;
+        color: rgba(black, 0.75);
+      }
+      ion-icon {
+        color: color($colors, primary);
+        font-size: 35px;
+        width: 40px;
+        text-align: center;
+      }
+    }
+    .description {
+      padding-top: 0.25em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid rgba(black, 0.2);
+      line-height: 25px;
+    }
+    .buttons {
+      ion-col { //TODO move to global scope and make configurable ?
+        &:first {
+          padding-right: 8px;
+        }
+        &:last-child {
+          padding-left: 8px;
+        }
+      }
+      button.button-ios, button.button-md { //TODO move to global scope? 
+        white-space: normal;
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
+}

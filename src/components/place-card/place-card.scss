@@ -1,0 +1,62 @@
+.ios, .md {
+  place-card {
+    display: block;
+    position: relative;
+    ion-badge {
+      padding: 4px 12px;
+      font-size: 14px;
+    }
+    img {
+      display: block;    
+      width: 100%;
+      z-index: -1;
+    }
+    .wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header { 
+      padding: 16px 24px 0 24px;
+    }
+    .footer {
+      padding: 16px 24px;
+      background-color: rgba(color($colors, primary), 0.8);
+      color: white;
+      position: relative;
+      .icon-wrapper {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-right: 24px;
+        opacity: 0.75;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .title {
+      font-family: 'sfui-display-regular';
+      font-size: 24px;
+    }
+    .subtitle {
+      font-family: 'sfui-display-light';
+      font-size: 16px;
+    }
+    .place {
+      background: rgba(white, 0.8);
+      color: black;
+      text-transform: uppercase;
+    }
+    .distance {
+      background: rgba(black, 0.8);
+    }
+  }
+}

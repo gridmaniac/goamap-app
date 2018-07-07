@@ -1,0 +1,63 @@
+<ion-header>
+  <custom-header>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-6 class='logo-wrapper'>
+          <div class='logo'>
+            <img src='assets/imgs/logo.png'/>
+          </div>
+          <span>
+            GOAMAP
+          </span>
+        </ion-col>
+        <ion-col col-6 class='button-wrapper'>
+          <button class='search-button' ion-button clear color='dark'>
+            <ion-icon name="ios-search"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </custom-header>
+  <!-- <custom-header>
+    <div class='logo'>
+      <img src='assets/imgs/logo.png'/>
+    </div>
+    <span class='title'>
+      GOAMAP
+    </span>
+    <button class='search-button' ion-button clear color='dark'>
+      <ion-icon name="ios-search"></ion-icon>      
+    </button>
+  </custom-header> -->
+</ion-header>
+
+<ion-content>
+  <img src='assets/imgs/main_1.png'/>
+  <ion-list no-lines >
+    <button ion-item (click)="openArticlePage()">
+      <ion-icon name="ios-book-outline" item-start></ion-icon>
+      Общая информация
+      <p>климат, история, люди, культура</p>
+    </button>
+    <button ion-item (click)="openArticleDonationsPage()">
+      <ion-icon name="ios-pulse-outline" item-start></ion-icon>
+      Чем заняться
+      <p>спорт, еда, развлечения, шопинг</p>
+    </button>
+    <button ion-item (click)="openArticleInterestsPage()">
+      <ion-icon name="ios-contacts-outline" item-start></ion-icon>
+      Общие интересы
+      <p>попутчики, романтика, компании</p>
+    </button>
+    <button ion-item (click)="openArticleMarketsPage()">
+      <ion-icon name="ios-camera-outline" item-start></ion-icon>
+      Что посмотреть
+      <p>пещеры, форты, водопады, Хампи</p>
+    </button>
+    <button ion-item (click)="openArticleClimatePage()">
+      <ion-icon name="ios-pin-outline" item-start></ion-icon>
+      Пляжи и населенные пункты
+      <p>аэропорты, крупные города</p>
+    </button>
+  </ion-list>
+</ion-content>

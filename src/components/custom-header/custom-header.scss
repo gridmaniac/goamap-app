@@ -1,0 +1,51 @@
+.ios, .md {
+  custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 25px 16px 0px 16px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 24px;
+    color: rgba(0,0,0, 0.75);
+
+    ion-segment.segment-ios, ion-segment.segment-md {
+      ion-segment-button {
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+
+    .button-clear {
+      height: 30px;
+      font-size: 30px;
+      padding: 0;
+    }
+    .col {
+      &-first {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      &-mid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-last {
+        display: flex;
+        justify-content: flex-end;        
+        align-items: center;
+      }
+    }
+  }
+}
+
+.md {
+  custom-header {
+    height: 50px;
+    padding: 0 16px;
+  }
+}

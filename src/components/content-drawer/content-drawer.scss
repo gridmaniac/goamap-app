@@ -1,0 +1,27 @@
+.ios, .md {
+
+	content-drawer {
+		width: 100%;
+		height: 100%;
+    position: absolute;
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
+		z-index: 10 !important;
+    
+    .content {
+      padding: 0 16px 16px 16px;
+      .scroll-content {
+        // height: 344px; //TODO calc in JS
+      }
+    }
+    .handle {
+      width: 100%;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.75);
+    }
+    .scroll-hack {
+      width: 100%;
+      height: 400px;
+    }
+	}
+
+}

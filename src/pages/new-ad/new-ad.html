@@ -1,0 +1,44 @@
+<ion-header>
+  <!-- //TODO refactor custom-header spaggethies -->
+  <custom-header>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-2>
+          <button ion-button clear color='primary' (click)='dismissModal()'>
+            <ion-icon name="ios-arrow-back"></ion-icon>      
+          </button>
+        </ion-col>
+        <ion-col col-8 style='text-align: center;'>
+          <span>Новое объявление</span>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </custom-header>
+</ion-header>
+  
+<ion-content>
+  <ion-list no-padding>
+    <!-- <ion-label>Категория</ion-label>
+    <ion-item>
+      <ion-select [(ngModel)]='category' multiple='false'>
+        <ion-option value='electronics'>Электроника</ion-option>
+        <ion-option value='rent'>Недвижимость</ion-option>
+        <ion-option value='sport'>Товары для спорта</ion-option>
+        <ion-option value='transport'>Транспорт</ion-option>
+        <ion-option value='appliences'>Бытовая техника</ion-option>
+        <ion-option value='services'>Услуги</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-item>
+        <ion-input type='number' placeholder='Стоимость'></ion-input>
+      </ion-item>
+    </ion-item> -->
+    <ion-item>
+      <ion-label>Срочное</ion-label>
+      <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>

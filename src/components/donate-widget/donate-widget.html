@@ -1,0 +1,24 @@
+<ion-grid>
+  <ion-row>
+    <ion-col col-6 class='wrapper'>
+      <div>
+        <ion-label>Выберите сумму</ion-label>
+      </div>
+      <div class='wrapper__select'>
+          <!-- interface='popover' -->
+        <ion-select [(ngModel)]='donation' interface='popover'>
+          <ion-option value='5'>5$</ion-option>
+          <ion-option value='10'>10$</ion-option>
+          <ion-option value='20'>20$</ion-option>
+          <ion-option value='50'>50$</ion-option>
+          <ion-option value='100'>100$</ion-option>
+        </ion-select>
+      </div>
+    </ion-col>
+    <ion-col col-6 align-self-center no-padding>
+      <button ion-button round>
+        Пожертвовать
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

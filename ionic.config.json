@@ -1,0 +1,8 @@
+{
+  "name": "goa-app",
+  "app_id": "de96e161",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

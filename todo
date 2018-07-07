@@ -1,0 +1,22 @@
++ Страница "Избранное" (Профиль_Избранное2.psd)
++ Страница "Профиль"
++ Размазать контент
+  + Гид
+    + Статья "Арамболь"
+    + Статья "Георграфия и климат"
+    + Статья "Общие интересы"
+    + Статья "Пожертвования"
+    + Статья "Рынки"
+- Модалка "Новое объявление"
+- Модалка "Профиль - редактирование"
+- Модалка "Фильтры" на карте
+
+//TODO refactor custom-header spaggethies
+
+Accordion
+https://www.joshmorony.com/creating-an-accordion-list-in-ionic/
+
+Statusbar transparency
+https://forum.ionicframework.com/t/ionic-how-to-have-a-transparent-status-bar/50491/3
+https://forum.ionicframework.com/t/transparent-status-bar-on-ionic/77183
+https://github.com/jeneser/ionic-super-bar

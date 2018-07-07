@@ -1,0 +1,126 @@
+<ion-header>
+  <!-- //TODO refactor custom-header spaggethies -->
+  <custom-header>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-2>
+          <button ion-button clear color='primary' (click)='dismissModal()'>
+            <ion-icon name="ios-arrow-back"></ion-icon>      
+          </button>
+        </ion-col>
+        <ion-col col-8 style='text-align: center;'>
+          <span>Выберите категорию</span>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </custom-header>
+</ion-header>
+
+<ion-content>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-health.png'/>
+    </div>
+    <span class='name'>
+      Медицина
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-food.png'/>
+    </div>
+    <span class='name'>
+      Продукты
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-restaurant.png'/>
+    </div>
+    <span class='name'>
+      Питание
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-money.png'/>
+    </div>
+    <span class='name'>
+      Деньги
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-rent.png'/>
+    </div>
+    <span class='name'>
+      Жилье
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-money.png'/>
+    </div>
+    <span class='name'>
+      Деньги
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-beach.png'/>
+    </div>
+    <span class='name'>
+      Пляж
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-sight.png'/>
+    </div>
+    <span class='name'>
+      Достопримечательности
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-police.png'/>
+    </div>
+    <span class='name'>
+      Полиция
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-gas.png'/>
+    </div>
+    <span class='name'>
+      Заправка
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-car.png'/>
+    </div>
+    <span class='name'>
+      Транспорт
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-services.png'/>
+    </div>
+    <span class='name'>
+      Услуги
+    </span>
+  </div>
+  <div class='filter-item' (click)='dismissModal()'>
+    <div class='icon'>
+      <img src='assets/icon/filter-entertainment.png'/>
+    </div>
+    <span class='name'>
+      Развлечения
+    </span>
+  </div>
+</ion-content>

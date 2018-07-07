@@ -1,0 +1,12 @@
+//Constants for getting type references
+export const ARTICLE_PAGE = 'ArticlePage';
+export const PLACES_PAGE = 'PlacesPage';
+export const LOCATIONS_PAGE = 'LocationsPage';
+export const ADS_PAGE = 'AdsPage';
+export const ACCOUNT_PAGE = 'AccountPage';
+export const ARTICLE_CLIMATE_PAGE = 'ArticleClimatePage';
+export const ARTICLE_INTERESTS_PAGE = 'ArticleInterestsPage';
+export const ARTICLE_DONATIONS_PAGE = 'ArticleDonationsPage';
+export const ARTICLE_MARKETS_PAGE = 'ArticleMarketsPage';
+export const NEW_AD_PAGE = 'NewAdPage';
+export const MAP_FILTER_PAGE = 'MapFilterPage';

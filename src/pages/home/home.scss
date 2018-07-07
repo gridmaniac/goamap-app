@@ -1,0 +1,43 @@
+.ios, .md {
+  page-home {
+    @include content-no-margin-top();    
+    
+    .search-button {
+      padding: 0 0 0 15px;
+      height: 30px;
+      font-size: 1em;
+    }
+    .logo-wrapper {
+      display: flex;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    // Menu
+    ion-list > button { 
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05) !important;
+      color: rgba(0, 0, 0, 0.7) !important;
+    }
+    .item {
+      padding: 5px 0;
+    }
+    .item > ion-icon {
+      width: 30px;
+    }
+    ion-icon[item-start] + .item-inner {
+      margin: 0;
+    }
+    ion-label {
+      font-size: 20px;
+    }
+    ion-label > p {
+      font-size: 14px;
+    }
+    ion-icon[item-start] {
+      margin: 0 25px;
+    }
+  }
+}

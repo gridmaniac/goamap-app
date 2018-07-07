@@ -1,0 +1,8 @@
+<!-- Generated template for the CustomHeaderComponent component -->
+<!-- <ion-navbar></ion-navbar> -->
+  <ng-container *ngIf='canGoBack'>
+    <button ion-button clear (click)='goBack()'>
+      <ion-icon name="ios-arrow-back" item-start></ion-icon>
+    </button>
+  </ng-container>
+  <ng-content></ng-content>
